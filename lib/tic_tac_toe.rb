@@ -46,7 +46,7 @@ class TicTacToe
   end
   
   def valid_move?(position)
-     position<=8 && @board[position]==" " ? true : false
+     position<=8 && position >=0 && @board[position]==" " ? true : false
   end
   
   def turn_count
