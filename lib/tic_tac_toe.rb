@@ -91,17 +91,7 @@ class TicTacToe
       turn
     end
   end
-  # def turn
-  #   user_input = gets.chomp
-  #   i=input_to_index(user_input)
-  #   until valid_move?(i)
-  #     user_input = gets.chomp
-  #   end
-  #   player_token = current_player
-  #   move(i, player_token)
-  #   display_board
-  # end
-  
+
 
   def won?
     WIN_COMBINATIONS.each do |x|
