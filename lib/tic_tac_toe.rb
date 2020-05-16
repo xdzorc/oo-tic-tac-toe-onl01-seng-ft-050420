@@ -46,7 +46,11 @@ class TicTacToe
   end
   
   def valid_move?(position)
+<<<<<<< HEAD
      position<=8 && position >=0 && @board[position]==" " ? true : false
+=======
+     position<=8 && @board[position]==" " ? true : false
+>>>>>>> 0a59e68d6584dd38bfe9229e2c3218a44296969d
   end
   
   def turn_count
@@ -91,7 +95,21 @@ class TicTacToe
       turn
     end
   end
+<<<<<<< HEAD
 
+=======
+  # def turn
+  #   user_input = gets.chomp
+  #   i=input_to_index(user_input)
+  #   until valid_move?(i)
+  #     user_input = gets.chomp
+  #   end
+  #   player_token = current_player
+  #   move(i, player_token)
+  #   display_board
+  # end
+  
+>>>>>>> 0a59e68d6584dd38bfe9229e2c3218a44296969d
 
   def won?
     WIN_COMBINATIONS.each do |x|
